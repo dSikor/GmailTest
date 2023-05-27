@@ -14,7 +14,7 @@ public class LoginUserPage {
         PageFactory.initElements(mdriver,this);
     }
 
-    @FindBy(name="identifier")
+    @FindBy(id="identifierId")
     WebElement userEmailOrMobilePhone;
 
     public void userEmailOrMobilePhone(String emailOrPhone) {
