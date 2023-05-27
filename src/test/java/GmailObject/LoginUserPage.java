@@ -17,10 +17,11 @@ public class LoginUserPage {
     @FindBy(id="identifierId")
     WebElement userEmailOrMobilePhone;
 
-    public void userEmailOrMobilePhone(String emailOrPhone) {
+
+    public void setUserEmailOrMobilePhone(String emailOrPhone) {
         userEmailOrMobilePhone.sendKeys(emailOrPhone);
     }
-    public WebElement userEmailOrMobilePhone() {
+    public WebElement getUserEmailOrMobilePhone() {
         return userEmailOrMobilePhone;
     }
 }
