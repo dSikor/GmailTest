@@ -25,4 +25,8 @@ public class LoginUserPage {
     public WebElement getUserEmailOrMobilePhone() {
         return userEmailOrMobilePhone;
     }
+    public void logIn()
+    {
+        buttonConfirm.click();
+    }
 }
