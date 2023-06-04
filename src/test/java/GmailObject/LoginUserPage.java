@@ -16,7 +16,8 @@ public class LoginUserPage {
 
     @FindBy(id="identifierId")
     WebElement userEmailOrMobilePhone;
-
+    @FindBy(xpath="//div[@id='identifierNext']//button")
+    WebElement buttonConfirm;
 
     public void setUserEmailOrMobilePhone(String emailOrPhone) {
         userEmailOrMobilePhone.sendKeys(emailOrPhone);
