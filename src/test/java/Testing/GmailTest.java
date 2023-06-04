@@ -30,5 +30,6 @@ public class GmailTest {
     public void canLoginWithCorrectCredential(){
         objLoginUserPage=new LoginUserPage(driver);
         objLoginUserPage.setUserEmailOrMobilePhone("sdasdas@interia.pl");
+        objLoginUserPage.logIn();
     }
 }
